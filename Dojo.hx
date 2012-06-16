@@ -8,10 +8,18 @@ package ;
 class Dojo 
 {
 	static public function require(requirment:String) {
-		var s = untyped __js__("dojo.require(requirment)");
+		untyped __js__("dojo.require(requirment)");
 	}
 	
 	static public function addOnLoad(func:Void->Void) {
-		var s = untyped __js__("dojo.addOnLoad(func)");
+		untyped __js__("dojo.addOnLoad(func)");
+	}
+	
+	static public function connect(obj:Dynamic, event:String, func:Dynamic->Void) {
+		untyped __js__("dojo.connect(obj,event,func)");
+	}
+	
+	static public function byId(id:String):Dynamic {
+		return untyped __js__("dojo.byId(id)");
 	}
 }

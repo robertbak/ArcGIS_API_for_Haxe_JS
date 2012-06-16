@@ -1,6 +1,5 @@
 package esri;
 
-import esri.geometry.Extent;
 import js.Dom;
 /* <p>The esri.geometry namespace has several utility methods associated
         with it. These methods are convenience methods that are not associated
@@ -34,7 +33,7 @@ return untyped __js__('esri.geometry.geodesicDensify(geometry,maxSegmentLength)'
 return untyped __js__('esri.geometry.geodesicLengths(polylines,lengthUnit)');}
 
 	/* Converts geometry from geographic units to Web Mercator units.*/
-	public static function geographicToWebMercator(geometry:esri.geometry.Geometry):Extent{
+	public static function geographicToWebMercator(geometry:esri.geometry.Geometry):esri.geometry.Geometry{
 return untyped __js__('esri.geometry.geographicToWebMercator(geometry)');}
 
 	/* Get the extent for the specified scale.*/

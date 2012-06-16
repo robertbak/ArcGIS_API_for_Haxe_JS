@@ -331,5 +331,28 @@ extern class Map {
 	/* Shows the zoom slider on the map. See <a href="../jshelp/intro_navigation.htm">Map
             navigation</a> for more details.*/
 	public function showZoomSlider():Void;
-	function new(divId:String,?options:{?displayGraphicsOnPan:Bool,?extent:Extent,?fadeOnZoom:Bool,?fitExtent:Bool,?force3DTransforms:Bool,?infoWindow:InfoWindowBase,?lods:Array<LOD>,?logo:Bool,?nav:Bool,?navigationMode:String,?resizeDelay:Float,?showInfoWindowOnClick:Bool,?slider:Bool,?wrapAround180:Bool}):Void;
+	function new(divId:String,?options:NewMapOptions):Void;
+}
+
+class NewMapOptions {
+	public function new(?extent:esri.geometry.Geometry) { 
+		this.extent = extent; 				
+		logo = true;
+		showInfoWindowOnClick = true;
+		slider = true;
+		wrapAround180 = true;
+		}	
+	public var extent:esri.geometry.Geometry; 
+	public var fadeOnZoom:Bool; 
+	public var fitExtent:Bool; 
+	public var force3DTransforms:Bool; 
+	public var logo:Bool;
+	public var infoWindow:InfoWindowBase; 
+	public var lods:Array<LOD>;
+	public var nav:Bool;
+	public var navigationMode:String;
+	public var resizeDelay:Float;
+	public var showInfoWindowOnClick:Bool;
+	public var slider:Bool;
+	public var wrapAround180:Bool;
 }
