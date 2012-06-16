@@ -1,7 +1,7 @@
 package esri;
 
 /* Documentation not available*/
-@native ("esri.renderer")
-extern class Renderer {
+//@native ("esri.renderer")
+class Renderer {
 
 }

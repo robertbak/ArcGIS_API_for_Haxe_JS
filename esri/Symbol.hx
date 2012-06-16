@@ -3,8 +3,8 @@ package esri;
 import js.Dom;
 /* The esri.symbol namespace contains utility methods that are not associated
         with any class.*/
-@native ("esri.symbol")
-extern class Symbol {
+//@native ("esri.symbol")
+class Symbol {
 
 
 	/* Converts input json into a symbol, returns null if the input json represents
@@ -13,7 +13,8 @@ extern class Symbol {
             method <br /> <pre class='prettyprint'>var duplicate
             = esri.symbol.fromjson(simpleMarkerSymbol.toJson());</pre></li><li>Symbol
             object returned from REST.</li></ol>*/
-	public static function fromJson():esri.symbol.Symbol;
+	public static function fromJson():esri.symbol.Symbol{
+return untyped __js__('esri.symbol.fromJson()');}
 
 	/* Returns the shape description properties for the given symbol as defined
             by the <a href="http://docs.dojocampus.org/dojox/gfx" target="_blank">Dojo
@@ -48,5 +49,6 @@ extern class Symbol {
             target="_blank">createShape</a> method of the surface.
             Alternatively, you can choose to change the shape description before creating
             the shape.*/
-	public static function getShapeDescriptors():Dynamic;
+	public static function getShapeDescriptors():Dynamic{
+return untyped __js__('esri.symbol.getShapeDescriptors()');}
 }

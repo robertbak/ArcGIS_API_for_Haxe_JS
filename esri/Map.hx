@@ -331,9 +331,5 @@ extern class Map {
 	/* Shows the zoom slider on the map. See <a href="../jshelp/intro_navigation.htm">Map
             navigation</a> for more details.*/
 	public function showZoomSlider():Void;
-	function new(divId:String, ?options: { ?displayGraphicsOnPan:Bool, ?extent:Extent, ?fadeOnZoom:Bool, ?fitExtent:Bool, ?force3DTransforms:Bool, ?infoWindow:InfoWindowBase, ?lods:Array<LOD>, ?logo:Bool, ?nav:Bool, ?navigationMode:String, ?resizeDelay:Float, ?showInfoWindowOnClick:Bool, ?slider:Bool, ?wrapAround180:Bool } ):Void;
-	
-	public function test():Void {
-	trace ("aa");	
-	}
+	function new(divId:String,?options:{?displayGraphicsOnPan:Bool,?extent:Extent,?fadeOnZoom:Bool,?fitExtent:Bool,?force3DTransforms:Bool,?infoWindow:InfoWindowBase,?lods:Array<LOD>,?logo:Bool,?nav:Bool,?navigationMode:String,?resizeDelay:Float,?showInfoWindowOnClick:Bool,?slider:Bool,?wrapAround180:Bool}):Void;
 }

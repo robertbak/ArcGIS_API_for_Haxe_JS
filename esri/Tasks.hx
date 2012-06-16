@@ -1,7 +1,7 @@
 package esri;
 
 /* Documentation not available*/
-@native ("esri.tasks")
-extern class Tasks {
+//@native ("esri.tasks")
+class Tasks {
 
 }
