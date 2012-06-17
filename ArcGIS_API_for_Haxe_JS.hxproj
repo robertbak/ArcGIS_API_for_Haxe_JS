@@ -40,12 +40,12 @@
   <!-- Executed before build -->
   <preBuildCommand />
   <!-- Executed after build -->
-  <postBuildCommand alwaysRun="False" />
+  <postBuildCommand alwaysRun="True">xcopy examples\html bin\ /s /Y </postBuildCommand>
   <!-- Other project options -->
   <options>
     <option showHiddenPaths="False" />
     <option testMovie="OpenDocument" />
-    <option testMovieCommand="bin/index.html" />
+    <option testMovieCommand="http://localhost/esri/index.html" />
   </options>
   <!-- Plugin storage -->
   <storage />
