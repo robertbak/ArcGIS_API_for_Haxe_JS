@@ -18,8 +18,8 @@ class MobilePopup
 	public function init() 
 	{
 		// Use proxy
-		EsriDefaultConfig.io_proxyUrl = "http://esri.imgdt.com/proxy/proxy.php";
-		EsriDefaultConfig.io_alwaysUseProxy = true;
+		//EsriDefaultConfig.io_proxyUrl = "http://esri.imgdt.com/proxy/proxy.php";
+		//EsriDefaultConfig.io_alwaysUseProxy = true;
 		
 		popup = new PopupMobile(null, Dojo.create("div"));			
 		var mapOptions:NewMapOptions = new NewMapOptions();
