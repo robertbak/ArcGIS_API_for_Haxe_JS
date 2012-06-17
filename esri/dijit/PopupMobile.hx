@@ -31,7 +31,7 @@ import js.Dom;
         with Popups</a> help topic for details on creating and using poups.
         </p>*/
 @native ("esri.dijit.PopupMobile")
-extern class PopupMobile {
+extern class PopupMobile extends esri.InfoWindowBase {
 
 
 	/* Removes all features and destroys any pending deferreds.*/
@@ -45,7 +45,7 @@ extern class PopupMobile {
 	public function getSelectedFeature():esri.Graphic;
 
 	/* Hide the info window.*/
-	public function hide():Void;
+	//public function hide():Void;
 
 	/* Selects the feature at the specified index.*/
 	public function select():Void;
@@ -54,7 +54,7 @@ extern class PopupMobile {
             Info Window Content</a> help topic for more details.<b>Note:</b>
             the Popup class doesn't support the deferred object option for setting
             content.*/
-	public function setContent():Void;
+	//public function setContent():Void;
 
 	/* Associate an array of features or an array of deferreds that return features
             with the info window. The first feature in the array is automatically selected.
@@ -67,9 +67,10 @@ extern class PopupMobile {
 
 	/* Sets the info window title. View the <a href="../jshelp_start.htm#jshelp/intro_formatinfowindow.htm">Format
             Info Window Content</a> help topic for more details.*/
-	public function setTitle():Void;
+	//public function setTitle():Void;
 
 	/* Display the info window at the specified location.*/
-	public function show():Void;
+	@:overload(function ():Void{})
+override public function show(point:esri.geometry.Point):Void;
 	function new(?options:Dynamic,srcNodeRef:String):Void;
 }

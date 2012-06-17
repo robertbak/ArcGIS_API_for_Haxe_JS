@@ -4,7 +4,7 @@
   <output>
     <movie outputType="Application" />
     <movie input="" />
-    <movie path="bin\ArcGISAPIforHaxeJS.js" />
+    <movie path="bin\widgets\mobile_popup.js" />
     <movie fps="0" />
     <movie width="0" />
     <movie height="0" />
@@ -15,7 +15,7 @@
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
-    <!-- example: <class path="..." /> -->
+    <class path="." />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -45,7 +45,7 @@
   <options>
     <option showHiddenPaths="False" />
     <option testMovie="OpenDocument" />
-    <option testMovieCommand="http://localhost/esri/index.html" />
+    <option testMovieCommand="http://localhost/esri/widgets/mobile_popup.html" />
   </options>
   <!-- Plugin storage -->
   <storage />

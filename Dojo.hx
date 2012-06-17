@@ -22,4 +22,13 @@ class Dojo
 	static public function byId(id:String):Dynamic {
 		return untyped __js__("dojo.byId(id)");
 	}
+	
+	static public function create(name:String):String {
+		return untyped __js__("dojo.create(name)");
+	}
+	
+	static public function toJson(object:Dynamic):String {
+		return untyped __js__("dojo.toJson(object)");
+	}
+	
 }

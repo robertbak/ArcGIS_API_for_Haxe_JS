@@ -19,7 +19,7 @@ class Utils {
             version. View the <a href="../jshelp_start.htm#jshelp/intro_webmap.html">Working
             with web maps</a> help topic for details on the response object.*/
 	public static function createMap(itemId:String,mapDiv:String,?options:Dynamic):Dynamic{
-return untyped __js__('esri.esri.arcgis.utils.createMap(itemId/itemInfo,mapDiv,options)');}
+return untyped __js__('esri.arcgis.utils.createMap(itemId,mapDiv,options)');}
 
 	/* <p>Get details about the input ArcGIS.com item. An object with the
             following specification is passed to the callback: </p> <pre class='prettyprint'>
@@ -28,5 +28,5 @@ return untyped __js__('esri.esri.arcgis.utils.createMap(itemId/itemInfo,mapDiv,o
             depends on the version. View the <a href="../jshelp_start.htm#jshelp/intro_webmap.html">Working
             with web maps</a> help topic for details on the response object.*/
 	public static function getItem(itemId:String):Dynamic{
-return untyped __js__('esri.esri.arcgis.utils.getItem(itemId)');}
+return untyped __js__('esri.arcgis.utils.getItem(itemId)');}
 }

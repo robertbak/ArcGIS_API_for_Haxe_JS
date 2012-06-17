@@ -4,6 +4,7 @@ import esri.dijit.Editing;
 import examples.configuration.Add_labels_to_slider;
 import examples.widgets.Bookmarks_Read_Only;
 import examples.map.WorldTopographicMap;
+import examples.widgets.MobilePopup;
 
 
 import esri.esri.arcgis.Utils;
@@ -209,7 +210,8 @@ class Main
 		//new examples.WorldTopographicMap();
 		//new examples.WorldImageryMap();
 		//new Add_labels_to_slider();
-		new Bookmarks_Read_Only();
+		//new Bookmarks_Read_Only();
+		new MobilePopup();
 	}
 	
 }
