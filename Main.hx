@@ -1,7 +1,9 @@
 package ;
 
 import esri.dijit.Editing;
-import examples.WorldTopographicMap;
+import examples.configuration.Add_labels_to_slider;
+import examples.widgets.Bookmarks_Read_Only;
+import examples.map.WorldTopographicMap;
 
 
 import esri.esri.arcgis.Utils;
@@ -200,32 +202,14 @@ import js.Lib;
 
 class Main 
 {
-	public function new():Void {
-	
-	}
 	
 	
-	public static function initMap():Void {
-		var s = untyped __js__('esri.config.defaults.io.proxyUrl = "http://localhost/esri/proxy.php"');
-		var startExtent:Extent = new Extent(8.749355, 47.378793, 28.351579, 57.282046,
-        new SpatialReference( { wkid:4326 } ) );
-		var map:Map = new Map("mapDiv" , { extent: startExtent, logo:false } );
-		
-		var layer = new ArcGISTiledMapServiceLayer("http://server.arcgisonline.com/ArcGIS/rest/services/ESRI_StreetMap_World_2D/MapServer");
-		var layer2 = new WMSLayer("http://ikar2.pgi.gov.pl/services/CBDG_JASKINIE/MapServer/WMSServer", {  visibleLayers: ['1', '2', '3', '5', '6'] } );
-		map.addLayer(layer);
-		map.addLayer(layer2);
-	
-
-	}
 	static function main() 
 	{
-		new WorldTopographicMap();
-		/*
-		Dojo.require("esri.map");
-		Dojo.require("esri.layers.wms");
-		Dojo.addOnLoad(initMap);
-		*/
+		//new examples.WorldTopographicMap();
+		//new examples.WorldImageryMap();
+		//new Add_labels_to_slider();
+		new Bookmarks_Read_Only();
 	}
 	
 }

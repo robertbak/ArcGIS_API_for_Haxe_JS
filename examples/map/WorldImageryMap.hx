@@ -1,4 +1,4 @@
-package examples;
+package examples.map;
 import esri.Geometry;
 import esri.geometry.Extent;
 import esri.Map;
@@ -45,4 +45,8 @@ class WorldImageryMap
 		Dojo.addOnLoad(initMap);
 	}
 	
+	static function main() 
+	{
+		new WorldImageryMap();		
+	}
 }

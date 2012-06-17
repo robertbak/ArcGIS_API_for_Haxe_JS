@@ -56,4 +56,8 @@ class Add_labels_to_slider
 		Dojo.addOnLoad(init);
 	}
 	
+	static function main() 
+	{
+		new Add_labels_to_slider();		
+	}
 }

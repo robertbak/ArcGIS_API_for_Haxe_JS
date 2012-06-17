@@ -1,4 +1,4 @@
-package examples;
+package examples.map;
 
 import esri.Geometry;
 import esri.geometry.Extent;
@@ -41,6 +41,11 @@ class WorldTopographicMap
 		Dojo.require("dijit.layout.ContentPane");
 		Dojo.require("esri.map");
 		Dojo.addOnLoad(initMap);
+	}
+		
+	static function main() 
+	{
+		new WorldTopographicMap();		
 	}
 	
 }
