@@ -1,6 +1,7 @@
 package examples.widgets;
 import esri.dijit.PopupMobile;
 import esri.esri.arcgis.Utils;
+import esri.EsriDefaultConfig;
 import esri.Map;
 
 /**
@@ -16,6 +17,9 @@ class MobilePopup
 	
 	public function init() 
 	{
+		// Use proxy
+		EsriDefaultConfig.io_proxyUrl = "http://esri.imgdt.com/proxy/proxy.php";
+		
 		popup = new PopupMobile(null, Dojo.create("div"));			
 		var mapOptions:NewMapOptions = new NewMapOptions();
 		mapOptions.slider = true;
