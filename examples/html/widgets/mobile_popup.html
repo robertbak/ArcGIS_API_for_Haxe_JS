@@ -21,44 +21,7 @@
     </style>
     <script type="text/javascript">var djConfig = {parseOnLoad: true};</script>
     <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.0compact"></script>
-    <script type="text/javascript">
-	/*
-      dojo.require("dijit.layout.BorderContainer");
-      dojo.require("dijit.layout.ContentPane");
-      dojo.require("esri.map");
-      dojo.require("esri.arcgis.utils");
-      dojo.require("esri.dijit.PopupMobile");
-      
-      var map,popup;
-      
-      function init() {
-        //create a mobile popup
-        popup = new esri.dijit.PopupMobile(null, dojo.create("div"));
-        
-        var mapDeferred = esri.arcgis.utils.createMap("661826977c5948eca3c55276fa1b0960", "map", {
-          mapOptions: {
-            slider: true,
-            nav:false,
-            wrapAround180:true,
-            infoWindow:popup
-          }
-        });
-        
-        mapDeferred.addCallback(function(response) {
-          map = response.map;  
-          //resize the map when the browser resizes
-          dojo.connect(dijit.byId('map'), 'resize', map,map.resize);
-          
-          map.setExtent(new esri.geometry.Extent({"xmin":-52909106.87506947,"ymin":935889.3196982983,"xmax":-40483503.557034515,"ymax":7451993.106951275,"spatialReference":{"wkid":102100}}));
-        });
-        mapDeferred.addErrback(function(error) {
-          console.log("Map creation failed: ", dojo.toJson(error));
-        });
-
-      }
-
-      dojo.addOnLoad(init);*/
-    </script>
+ 
 	<script src="mobile_popup.js"></script>
   </head>
   
