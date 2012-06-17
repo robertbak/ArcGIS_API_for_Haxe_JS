@@ -55,7 +55,7 @@ class MobilePopup
 	
 	static function main() 
 	{
-		new Bookmarks_Read_Only();		
+		new MobilePopup();		
 	}
 	
 }
