@@ -354,5 +354,5 @@ class NewMapOptions {
 	public var resizeDelay:Float;
 	public var showInfoWindowOnClick:Bool;
 	public var slider:Bool;
-	public var wrapAround180:Bool;	
+	public var wrapAround180:Bool;
 }

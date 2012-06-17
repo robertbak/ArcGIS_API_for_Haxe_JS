@@ -19,6 +19,10 @@ class Dojo
 		untyped __js__("dojo.connect(obj,event,func)");
 	}
 	
+	static public function disconnect(handle:Dynamic) {
+		untyped __js__("dojo.disconnect(handle)");
+	}
+	
 	static public function byId(id:String):Dynamic {
 		return untyped __js__("dojo.byId(id)");
 	}

@@ -32,6 +32,7 @@ extern class WMSLayer extends Layer {
 	public var maxWidth:Float;
 	/* Spatial reference of the WMS service.*/
 	public var spatialReference:esri.SpatialReference;
+	public var spatialReferences:Array<String>;
 	/* Title of the WMS service.*/
 	public var title:String;
 	/* Version of the WMS service. Supported versions are: 1.1.0,1.1.1 and 1.3.0.*/

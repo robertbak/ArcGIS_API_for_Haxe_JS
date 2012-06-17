@@ -13,6 +13,9 @@ extern class WMSLayerInfo {
 	public var name:String;
 	/* The layer title.*/
 	public var title:String;
+	public var spatialReferences: Array<String>;
+	public var legendURL: String;
+	public var subLayers: Array<WMSLayerInfo>	;
 
 	function new(layer:Dynamic):Void;
 }
