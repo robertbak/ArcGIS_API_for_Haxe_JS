@@ -5,8 +5,8 @@
 *.pydevproject
 .project
 .metadata
-bin/*.js
-bin/*.map
+*.js
+*.map
 tmp/
 *.tmp
 *.bak
