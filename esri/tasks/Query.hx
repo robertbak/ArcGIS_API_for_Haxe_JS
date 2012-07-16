@@ -114,5 +114,5 @@ extern class Query {
             the fields in the layer is allowed.*/
 	public var where:String;
 
-	function new():Void;
+	 function new():Void;
 }

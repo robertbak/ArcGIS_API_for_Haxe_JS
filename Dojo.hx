@@ -35,4 +35,7 @@ class Dojo
 		return untyped __js__("dojo.toJson(object)");
 	}
 	
+	static public function place(source:Dynamic,target:Dynamic) {
+		untyped __js__("dojo.place(source,target)");
+	}
 }
